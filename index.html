@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MCC PWA Launcher</title>
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ffffff">
-  <script>
-    window.location.href = "https://online.madrascricketclub.org/login";
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCC Login</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    html, body, iframe {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+    iframe {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <noscript>Redirecting to MCC Online...</noscript>
+  <iframe src="https://online.madrascricketclub.org/login" title="MCC Login" frameborder="0"></iframe>
 </body>
 </html>
